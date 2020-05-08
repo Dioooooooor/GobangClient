@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package msg_define;
+
+
+message  AskLogin {
+    string username = 1;
+    string password = 2;
+}
+
+message RpyLogin {
+    int32 loginResult = 1;
+    bytes greeting = 2;
+    int32 test = 3;
+}
